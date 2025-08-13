@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrl: './my-calculator.component.scss'
 })
 export class MyCalculatorComponent {
+  public first: number = 1;
+  public second: number = 1;
+  public operation: string = '+';
+  public operations: string[] = ['+', '-', '*', '/'];
+  //public result: number | undefined = undefined;
+  public result?: number;
 
+  public calc() {
+    if (this.operation) {
+      switch (this.operation) {
+        case '+':
+          this.result = this.first + this.second;
+          break;
+        case '-':
+          this.result = this.first - this.second;
+          break;
+        case '*':
+          this.result = this.first * this.second;
+          break;
+        case '/':
+          this.result = this.first / this.second;
+          break;
+
+      }
+    }
+  }
 }
