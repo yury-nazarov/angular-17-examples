@@ -12,7 +12,7 @@ import {MyEmptyRoute} from "./components/empty-route/empty-route.component";
   declarations: [
     AppComponent,
     MyNavigation,
-    MyEmptyRoute,
+    MyEmptyRoute
   ],
   imports: [
     BrowserModule,
