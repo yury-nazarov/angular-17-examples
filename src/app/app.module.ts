@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MyCalculatorModule} from "./calculator/my-calculator.module";
+import {MyNavigation} from "./components/navigation.component";
 
 @NgModule({
   declarations: [
     AppComponent,
+    MyNavigation
   ],
   imports: [
     BrowserModule,
